@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healy Labs</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+
+  <!-- TICKER -->
+  <div class="ticker" style="position:fixed;top:0;z-index:200;width:100%;display:none;" id="ticker">
+    <span class="ticker-inner">
+      &nbsp;&nbsp;&nbsp;Healy Labs &mdash; Building in public &nbsp;&bull;&nbsp; Healy Health App &nbsp;&bull;&nbsp; The
+      Book of DERD &nbsp;&bull;&nbsp; Live on Twitch &nbsp;&bull;&nbsp; Merch dropping soon &nbsp;&bull;&nbsp; Duluth,
+      MN &nbsp;&bull;&nbsp; Healy Labs &mdash; Building in public &nbsp;&bull;&nbsp; Healy Health App &nbsp;&bull;&nbsp;
+      The Book of DERD &nbsp;&bull;&nbsp; Live on Twitch &nbsp;&bull;&nbsp; Merch dropping soon &nbsp;&bull;&nbsp;
+      Duluth, MN &nbsp;&bull;&nbsp;
+    </span>
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Healy<span>Labs</span></div>
+    <ul class="nav-links">
+      <li><a href="#products">Products</a></li>
+      <li><a href="#merch">Merch</a></li>
+      <li><a href="#twitch">Twitch</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-tag">healylabs.io</div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="toggle-icon sun">☀️</span>
+        <span class="toggle-icon moon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <p class="hero-eyebrow">// Duluth, MN &mdash; Est. 2024</p>
+    <h1 class="hero-title">
+      BUILD<br>
+      <span class="line2">DIFFERENT</span><br>
+      <span class="accent">.</span>
+    </h1>
+    <p class="hero-desc">
+      A one-man lab shipping fitness tech, self-help frameworks,
+      live content, and gear. All built in the open, from the North Shore.
+    </p>
+    <div class="hero-cta">
+      <a href="#products" class="btn-primary">Explore Projects</a>
+      <a href="#merch" class="btn-ghost">Shop Merch</a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-box">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Active Projects</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">MN</div>
+      <div class="stat-label">Based in Duluth</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">∞</div>
+      <div class="stat-label">WIP Always</div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="section-inner">
+      <p class="section-label scroll-reveal">What we're building</p>
+      <h2 class="section-title scroll-reveal">Projects<br>&amp; Products</h2>
+
+      <div class="products-grid scroll-reveal">
+
+        <a href="#" class="product-card" data-accent="cyan">
+          <span class="product-tag">iOS App</span>
+          <h3 class="product-name">Healy Health</h3>
+          <p class="product-desc">
+            A workout tracking app built in SwiftUI. Log sessions, track
+            your push/pull/legs splits, and visualize progress — built for
+            how real lifters actually train.
+          </p>
+          <div class="product-arrow">Learn more &rarr;</div>
+          <div class="product-icon">💪</div>
+        </a>
+
+        <a href="#" class="product-card" data-accent="orange">
+          <span class="product-tag">Book</span>
+          <h3 class="product-name">The Book<br>of DERD</h3>
+          <p class="product-desc">
+            A self-help framework structured around seven pillars aligned
+            with Maslow's hierarchy. Built for people who want a system,
+            not a sermon.
+          </p>
+          <div class="product-arrow">Learn more &rarr;</div>
+          <div class="product-icon">📖</div>
+        </a>
+
+        <a href="#twitch" class="product-card" data-accent="green">
+          <span class="product-tag">Live Content</span>
+          <h3 class="product-name">Twitch &amp;<br>YouTube</h3>
+          <p class="product-desc">
+            Gaming streams, AI breakdowns, finance takes, and the occasional
+            deep dive into geopolitics and the singularity. Raw and unfiltered
+            from Duluth.
+          </p>
+          <div class="product-arrow">Watch live &rarr;</div>
+          <div class="product-icon">🎮</div>
+        </a>
+
+        <a href="#merch" class="product-card" data-accent="cyan">
+          <span class="product-tag">Coming Soon</span>
+          <h3 class="product-name">Merch<br>Store</h3>
+          <p class="product-desc">
+            Gear for builders, coders, and gym rats. Clean, minimal drops
+            with the Healy Labs aesthetic baked in. First collection
+            dropping soon.
+          </p>
+          <div class="product-arrow">Preview drop &rarr;</div>
+          <div class="product-icon">👕</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- MERCH -->
+  <section id="merch" class="merch-section">
+    <div class="section-inner">
+      <p class="section-label scroll-reveal">Healy Labs Store</p>
+      <h2 class="section-title scroll-reveal">
+        Merch Drop<br>
+        <span style="color: transparent; -webkit-text-stroke: 1px #ccc;">Coming Soon</span>
+      </h2>
+
+      <div class="merch-grid scroll-reveal">
+
+        <div class="merch-card">
+          <div class="merch-img" style="background: var(--surface);">
+            <div class="merch-img-bg" style="background: radial-gradient(circle, var(--accent) 0%, transparent 70%);">
+            </div>
+            <span
+              style="z-index:1; font-family:'Syne',sans-serif; font-weight:800; font-size:1.1rem; color:var(--accent);">HL-01</span>
+          </div>
+          <div class="merch-body">
+            <div class="merch-name">Labs Tee</div>
+            <div class="merch-sub">Healy Labs wordmark &mdash; black/cyan</div>
+            <div class="merch-footer">
+              <span class="merch-price">$32</span>
+              <button class="merch-btn">Notify Me</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="merch-card">
+          <div class="merch-img" style="background: #fef3e2;">
+            <div class="merch-img-bg" style="background: radial-gradient(circle, #f97316 0%, transparent 70%);">
+            </div>
+            <span
+              style="z-index:1; font-family:'Syne',sans-serif; font-weight:800; font-size:1.1rem; color:#f97316;">DERD</span>
+          </div>
+          <div class="merch-body">
+            <div class="merch-name">DERD Hoodie</div>
+            <div class="merch-sub">Seven pillars print &mdash; charcoal</div>
+            <div class="merch-footer">
+              <span class="merch-price" style="color:#f97316">$58</span>
+              <button class="merch-btn" style="background:#f97316">Notify Me</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="merch-card">
+          <div class="merch-img" style="background: var(--accent-light);">
+            <div class="merch-img-bg" style="background: radial-gradient(circle, var(--accent) 0%, transparent 70%);">
+            </div>
+            <span
+              style="z-index:1; font-family:'Syne',sans-serif; font-weight:800; font-size:1.1rem; color:var(--accent)">BUILD</span>
+          </div>
+          <div class="merch-body">
+            <div class="merch-name">Build Cap</div>
+            <div class="merch-sub">Embroidered logo &mdash; black</div>
+            <div class="merch-footer">
+              <span class="merch-price">$28</span>
+              <button class="merch-btn">Notify Me</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p style="text-align:center; color:var(--muted); font-size:0.7rem; margin-top:2.5rem; letter-spacing:0.08em;">
+        * Mock store — real drops coming. Hit notify to get on the list.
+      </p>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- TWITCH -->
+  <section id="twitch" class="twitch-section">
+    <div class="section-inner">
+      <div class="twitch-inner">
+        <div>
+          <p class="section-label scroll-reveal">Live on Twitch</p>
+          <div class="twitch-handle scroll-reveal">healy218</div>
+          <p class="twitch-sub scroll-reveal">
+            Gaming, AI, finance, and whatever's on my mind.
+            Dota 2, CS2, Deadlock. Minnesota on the map.
+            No filter, no script.
+          </p>
+          <a href="https://twitch.tv/healy218" class="btn-twitch scroll-reveal" target="_blank">
+            Follow on Twitch
+          </a>
+        </div>
+        <div class="twitch-screen scroll-reveal">
+          <div class="twitch-live"><span class="live-dot"></span> Offline</div>
+          <div class="twitch-logo-big">🎮</div>
+          <div
+            style="position:absolute; bottom:0.8rem; right:0.8rem; font-size:0.6rem; color:var(--muted); letter-spacing:0.1em;">
+            twitch.tv/healy218
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Healy<span>Labs</span></div>
+    <p class="footer-copy">&copy; 2025 Healy Labs &mdash; Duluth, MN</p>
+    <ul class="footer-links">
+      <li><a href="#">Twitter</a></li>
+      <li><a href="https://twitch.tv/healy218" target="_blank">Twitch</a></li>
+      <li><a href="#">YouTube</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
