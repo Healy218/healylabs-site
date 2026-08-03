@@ -358,6 +358,17 @@ a:focus-visible {
     box-shadow: 8px 8px 0 #17351d;
 }
 
+.button-secondary {
+    border-color: #3a463c;
+    color: #d4dbd5;
+    background: transparent;
+}
+
+.button-secondary:hover {
+    border-color: var(--acid);
+    color: var(--acid);
+}
+
 .text-link {
     color: var(--text-soft);
     font-size: 0.7rem;
@@ -368,6 +379,58 @@ a:focus-visible {
 
 .text-link:hover {
     color: var(--acid);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: 1000px;
+    margin-top: clamp(3rem, 6vw, 5rem);
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.service-grid article {
+    min-height: 180px;
+    padding: 1.15rem;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: color-mix(in srgb, var(--ink-soft) 88%, transparent);
+}
+
+.service-grid article > span,
+.service-rate span {
+    color: var(--acid);
+    font-size: 0.56rem;
+    letter-spacing: 0.14em;
+}
+
+.service-grid h2 {
+    margin: 1.8rem 0 1rem;
+    color: var(--text);
+    font-family: var(--font-display);
+    font-size: clamp(1.35rem, 2.3vw, 2rem);
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    line-height: 0.88;
+    text-transform: uppercase;
+}
+
+.service-grid p {
+    color: var(--text-soft);
+    font-size: 0.67rem;
+    line-height: 1.65;
+}
+
+.service-rate {
+    margin-top: 1rem;
+    color: var(--muted);
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+}
+
+.service-rate span {
+    margin-right: 0.75rem;
 }
 
 .hero-proof {
@@ -927,6 +990,12 @@ a:focus-visible {
     line-height: 1.9;
 }
 
+.live-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
 .signal-screen {
     position: relative;
     aspect-ratio: 16 / 10;
@@ -1142,6 +1211,10 @@ footer > p {
         min-height: 390px;
     }
 
+    .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .merch-grid {
         grid-template-columns: 1fr;
         max-width: 540px;
@@ -1225,6 +1298,14 @@ footer > p {
 
     .hero-proof {
         grid-template-columns: 1fr;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-grid article {
+        min-height: 0;
     }
 
     .hero-proof div + div {
