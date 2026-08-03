@@ -1,18 +1,36 @@
 # Healy Labs — Landing Page
 
-A single-file SPA landing page for healylabs.io / healylabs.lol
+A responsive static site for [healylabs.lol](https://www.healylabs.lol/), designed around the neon-green Healy Labs matrix logo.
 
-## Deploy
-- **Netlify**: Drag the folder into netlify.com/drop
-- **Vercel**: Run `vercel` in this directory or drag/drop on vercel.com
+## Local preview
+
+Serve the repository with any static file server, then open `index.html` through that server.
 
 ## Structure
-```
+
+```text
 healylabs-site/
-└── index.html   ← everything is in here (HTML, CSS, JS)
+├── index.html
+├── assets/
+│   ├── healy-labs-logo.png
+│   ├── healy-labs-logo-white.png
+│   ├── og.png
+│   └── og-white.png
+├── css/
+│   └── styles.css
+└── js/
+    └── main.js
 ```
 
-## Customization
-- Fonts: Syne (headings) + DM Mono (body) via Google Fonts
-- Colors: edit CSS variables at the top of the `:root` block
-- Content: find sections by their `id` — #products, #merch, #twitch
+## Design system
+
+- Syne for display typography and DM Mono for interface text
+- Near-black surfaces with acid-green identity accents
+- Four-screen tab navigation: Home, Lab, Social, and Merch
+- Accessible dark/light theme control with saved preference
+- Responsive layouts at desktop, tablet, and mobile widths
+- Motion respects `prefers-reduced-motion`
+
+## Deployment
+
+The site has no build step or runtime dependencies. Deploy the repository root to any static host, including Netlify, Vercel, or GitHub Pages.
