@@ -65,8 +65,8 @@ a { color: inherit; }
 
 .brand-mark {
     position: relative;
-    width: 210px;
-    height: 74px;
+    width: 180px;
+    height: 108px;
     display: block;
     overflow: hidden;
 }
@@ -75,7 +75,7 @@ a { color: inherit; }
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 420px;
+    width: 170px;
     max-width: none;
     height: auto;
     transform: translate(-50%, -50%);
@@ -323,8 +323,8 @@ footer {
     border-top: 1px solid var(--line);
 }
 
-.footer-brand .brand-mark { width: 140px; height: 48px; }
-.footer-brand .brand-mark img { width: 280px; }
+.footer-brand .brand-mark { width: 130px; height: 80px; }
+.footer-brand .brand-mark img { width: 125px; }
 footer > p { max-width: 250px; margin: 0; color: var(--ink-soft); font-size: 0.7rem; line-height: 1.5; }
 footer > div:last-child { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 0.8rem 1rem; color: var(--ink-soft); font-size: 0.66rem; }
 footer a { text-decoration: none; }
@@ -343,8 +343,8 @@ footer a:hover { color: var(--accent); }
 
 @media (max-width: 680px) {
     .site-header { min-height: 88px; gap: 1rem; }
-    .brand-mark { width: 142px; height: 52px; }
-    .brand-mark img { width: 285px; }
+    .brand-mark { width: 142px; height: 86px; }
+    .brand-mark img { width: 136px; }
     nav { gap: 0.55rem; }
     .nav-tab { font-size: 0.64rem; }
     .hero, .work, .social, .merch { min-height: auto; padding-top: 3.5rem; padding-bottom: 4.5rem; }
