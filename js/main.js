@@ -1,23 +1,5 @@
-const root = document.documentElement;
-const themeToggle = document.getElementById('themeToggle');
-const savedTheme = localStorage.getItem('healy-labs-theme');
-
-function setTheme(theme) {
-    const isLight = theme === 'light';
-    root.classList.toggle('light-mode', isLight);
-    themeToggle.setAttribute('aria-pressed', String(isLight));
-    themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
-    localStorage.setItem('healy-labs-theme', isLight ? 'light' : 'dark');
-}
-
-setTheme(savedTheme === 'light' ? 'light' : 'dark');
-
-themeToggle.addEventListener('click', () => {
-    setTheme(root.classList.contains('light-mode') ? 'dark' : 'light');
-});
-
-const revealItems = document.querySelectorAll('.reveal');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const revealItems = document.querySelectorAll('.reveal');
 const tabs = [...document.querySelectorAll('[role="tab"]')];
 const panels = [...document.querySelectorAll('[data-tab-panel]')];
 
@@ -84,7 +66,7 @@ if (reduceMotion || !('IntersectionObserver' in window)) {
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
 
     revealItems.forEach((item, index) => {
-        item.style.transitionDelay = `${Math.min(index % 4, 3) * 70}ms`;
+        item.style.transitionDelay = `${Math.min(index % 4, 3) * 55}ms`;
         observer.observe(item);
     });
 }
